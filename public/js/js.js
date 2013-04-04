@@ -67,3 +67,35 @@ jQuery(document).ready(function ($) {
 
 
 });
+
+
+
+
+
+
+
+
+$(function(){
+  // $('#learn-slider').liquidSlider();  
+  //conflicting with something keeping it lower
+  // init liquid slider with options
+  $('#get-involved-slider').liquidSlider({
+    responsive: false,
+    autoSlide:false,
+    autoHeight:true,
+    preloader: false,
+    hashLinking: true,
+    hashNames: true,
+    hashCrossLinks: true,
+    dynamicTabs: true,
+    crossLinks: true,
+    keyboardNavigation: true,
+    leftKey: 39,
+    rightKey: 37,
+  });
+
+
+
+
+});//end  function
+  
