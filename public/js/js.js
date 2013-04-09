@@ -1,5 +1,9 @@
 jQuery(document).ready(function ($) {
 
+    //initialise all the goodness
+    //richard oreilly 
+    //sodigit.al design and development
+    //holler at me
 
     //initialise Stellar.js
     $(window).stellar();
@@ -88,10 +92,7 @@ $(function(){
     hashNames: true,
     hashCrossLinks: true,
     dynamicTabs: true,
-    crossLinks: true,
-    keyboardNavigation: true,
-    leftKey: 39,
-    rightKey: 37,
+    crossLinks: true
   });
 
 

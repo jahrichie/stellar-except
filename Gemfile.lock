@@ -16,6 +16,7 @@ GEM
     arel (3.0.2)
     bond (0.4.3)
     builder (3.0.4)
+    clipboard (1.0.1)
     excon (0.16.10)
     heroku (2.35.0)
       heroku-api (~> 0.3.7)
@@ -71,6 +72,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  clipboard
   heroku
   pg
   shotgun

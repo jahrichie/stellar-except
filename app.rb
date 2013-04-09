@@ -1,5 +1,6 @@
 # app.rb
 require "sinatra"
+require "Clipboard"
 require "sinatra/activerecord"
 
 set :database, "sqlite3:///except.db"

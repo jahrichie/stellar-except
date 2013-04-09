@@ -5,6 +5,7 @@ gem "sinatra"
 gem "activerecord"
 gem "sinatra-activerecord"
 gem "heroku"
+gem "clipboard"
 
 group :development do
   gem "sqlite3"
@@ -13,6 +14,7 @@ group :development do
 end
 
 group :production do
+  # gem "activerecord-sqlite3-adapter"
   gem "pg"
 end
 

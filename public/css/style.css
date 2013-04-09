@@ -1,13 +1,9 @@
 @charset "utf-8";
 
 /*!
- * Bootstrap v2.3.1
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
+    richard oreilly 
+    sodigit.al design and development
+    holler at me
  */
 .clearfix {
   *zoom: 1;
@@ -127,7 +123,7 @@
   box-shadow: none;
 }
 .btn-large {
-  padding: 40px 60px;
+  padding: 20px 30px;
   font-size: 17.5px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -862,3 +858,91 @@ height:150px;
 
 input.form {}
 
+.btn {text-decoration: none;}
+
+.buttonfloat {
+  float:left;margin:4px;
+}
+
+.buttonfloat {
+  margin-left:50px;  
+}
+
+
+.one-sign:before {
+   content: "1";
+   font-size:18px;
+   padding-right:20px;
+   color:#999;
+   position: relative;
+   z-index:9999;
+   margin-left:100px;
+}
+
+.two-sign:before {
+   content: "2";
+   font-size:18px;
+   padding-right:20px;
+   padding-left:-40px;
+   color:#000;
+   position: relative;
+   z-index:9999;
+
+}
+h1.suggestedlanguage {
+  margin:10px 0 ;  
+}
+blockquote {
+  font-size:12px;
+}
+
+
+
+
+/*
+LINKS
+*/
+a {
+  text-decoration:none;
+  color:#81A56D;
+  }
+.btn a {
+  color:#FFF;
+}
+
+#restaurants ul{
+  display: inline;
+  width:200px;
+
+}
+#restaurants li{
+  display: inline;
+  width:200px;
+
+}
+
+div.restBlocks {  
+  margin: 5px;
+
+}
+
+
+.twitterwrapper, .facebookwrapper {
+  margin-top:20px;
+  float:left;
+  margin-bottom:20px;
+
+}
+
+.twitterwrapper {
+  /*border:1px solid green;*/
+  padding-left:50px; 
+  width: 200px;
+
+}
+
+.facebookwrapper {
+  width: 400px;
+  /*border:1px solid red;*/
+  margin-left:50px; 
+}
