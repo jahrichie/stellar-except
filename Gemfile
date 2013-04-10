@@ -13,6 +13,9 @@ group :development do
   gem "tux"
 end
 
+gem "pg"
+# gem "activerecord-sqlite3-adapter"
+
 group :production do
   # gem "activerecord-sqlite3-adapter"
   gem "pg"
