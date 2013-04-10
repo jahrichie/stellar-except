@@ -3,6 +3,10 @@ require "sinatra"
 require "Clipboard"
 require "sinatra/activerecord"
 
+#options
+set :port, 3000
+#end options
+
 # set :database, "sqlite3:///except.db"
 
 

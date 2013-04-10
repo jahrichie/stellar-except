@@ -520,7 +520,7 @@ html,body{
 	padding-top:2px;
 	position:fixed;
 	top:0;
-	z-index:99999999999;
+	z-index:999999999999999999999999999999999999999;
 	background: #81A56D;
 	box-shadow: 0 0 3px rgba(0,0,0,0.9);
 	width:100%;
@@ -621,16 +621,19 @@ font-family: "omnes-pro",sans-serif;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-
-	/*background-color:#5c9900;*/
-	
+  position:relative;
+  z-index:999999;
 }
+
 /******************************
  SLIDE 2 
 *******************************/
 #slide2{
 	background-color:#81A56D;
+  padding-top:80px;
+  position:relative;
+  z-index:99;
+
 
 }
 #slide2 img:first-child{
@@ -678,9 +681,11 @@ left: -150px;
 *******************************/
 #slide3{
 	background-color:#A27943;
+  position: relative;
+  z-index:99999999;
 }
 #slide3 img:first-child{
-	position:absolute;
+position:absolute;
 top: 500px;
 left: 300px;
 }
@@ -741,6 +746,8 @@ left: 300px;
 	-o-background-size: cover;
 	background-size: cover;
 	color:#FFF;
+  position: relative;
+  z-index:999999999999999999999999999999999999999;
 }
 
  
@@ -765,12 +772,27 @@ p,body {
 }
 
 .learnCopy {
-	margin-top:200px;
-	width:800px;
+	width:900px;
 	margin:0 auto;
 	background: #FFF;
+  position: relative;
+  z-index: 999999999999;
 }
 
+.learnCopy p{
+  font-size:12px;
+  margin:20px ;  
+}
+
+.learnCopy ul {
+  margin:20px;
+}
+
+.learnCopy li {
+  margin:3px;
+  list-style: circle;  
+  margin-left:20px;
+}
 
 .button {
 	font-size: 40px;
@@ -895,7 +917,10 @@ h1.suggestedlanguage {
 blockquote {
   font-size:12px;
 }
-
+blockquote:hover {
+  background:rgba(200,200,200,.7);  
+   cursor: copy;
+}
 
 
 
@@ -944,5 +969,75 @@ div.restBlocks {
 .facebookwrapper {
   width: 400px;
   /*border:1px solid red;*/
-  margin-left:50px; 
+  margin-left:130px; 
 }
+.learnlinks {
+  text-align: center;
+  margin:5px 0 0 0 ;
+    
+}
+
+.floatleftyo {
+  float:left;
+  width:50% ;
+  margin-left:-100px;
+}
+
+
+.floatleftyo:first-child {
+  margin-left:100px;  
+} 
+
+.learncopy {
+
+}
+.extrasmall {
+  font-size:10px;
+  color:#666;  
+}
+
+.partner-logo-wrapper {
+  width:900px ;
+  margin: 0 auto; 
+  padding-top:100px; 
+}
+ 
+
+
+
+ body,
+html{
+height: 100%;
+width: 100%; } /* If you don't do this, gremlins will eat your nose. */
+
+#gmap{
+height: 100%;
+left: 0;
+position: fixed !important; /* Acts in pretty much the same way as background-attachment: fixed for an image background. Has to be !important only if you're using the Google Maps API. */
+top: 0;
+width: 100%;
+z-index: 1; } /* Has to be at least one increment smaller in value than the container's z-index */
+
+#container{
+background: rgba(0, 0, 0, 0.8);
+border-radius: 20px;
+border: 3px solid #fff;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+margin: 0 auto;
+overflow: visible !important; /* Has to be !important only if you're using an on/off switch */
+padding: 40px;
+position: relative;
+top: 100px;
+width: 800px;
+z-index: 2; } /* Has to be at least one increment larger
+
+
+
+
+
+
+
+
+
+
+
