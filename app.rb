@@ -1,6 +1,6 @@
 # app.rb
 require "sinatra"
-require "Clipboard"
+# require "Clipboard"
 require "sinatra/activerecord"
 
 #options
