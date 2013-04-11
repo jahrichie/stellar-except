@@ -519,7 +519,7 @@ html,body{
 	padding-top:2px;
 	position:fixed;
 	top:0;
-	z-index:999999999999999999999999999999999999999;
+	z-index:9999;
 	background: #81A56D;
 	box-shadow: 0 0 3px rgba(0,0,0,0.9);
 	width:100%;
@@ -589,17 +589,17 @@ font-family: "omnes-pro",sans-serif;
 	left:0px;
 	font-size:50px;
 	font-weight:bold;
-	color:#FFF;
-	font-family: "omnes-pro",sans-serif;
-	font-style: normal;
-	font-weight: 100;
-	text-transform:uppercase;
+	color:#000;
+font-family: "hotel-open",sans-serif;
+font-style: normal;
+font-weight: 400;
 }
 .button{
 	display:block;
 	width:50px;
 	height:50px;
 	position:absolute;
+  z-index:999;
 	bottom:0px;
 	left:50%;
 	background:#000;
@@ -621,7 +621,7 @@ font-family: "omnes-pro",sans-serif;
   -o-background-size: cover;
   background-size: cover;
   position:relative;
-  z-index:999999;
+  z-index:999;
 }
 
 /******************************
@@ -681,7 +681,7 @@ left: -150px;
 #slide3{
 	background-color:#A27943;
   position: relative;
-  z-index:99999999;
+  z-index:999;
 }
 #slide3 img:first-child{
 position:absolute;
@@ -746,7 +746,7 @@ left: 300px;
 	background-size: cover;
 	color:#FFF;
   position: relative;
-  z-index:999999999999999999999999999999999999999;
+  z-index:999;
 }
 
  
@@ -775,7 +775,7 @@ p,body {
 	margin:0 auto;
 	background: #FFF;
   position: relative;
-  z-index: 999999999999;
+  z-index: 999;
   padding-bottom:10px;
 }
 
@@ -901,7 +901,7 @@ input.form {}
    padding-right:20px;
    color:#999;
    position: relative;
-   z-index:9999;
+   z-index:999;
    margin-left:100px;
 }
 
@@ -912,7 +912,7 @@ input.form {}
    padding-left:-40px;
    color:#000;
    position: relative;
-   z-index:9999;
+   z-index:999;
 
 }
 h1.suggestedlanguage {
@@ -1071,7 +1071,7 @@ font-size: 36px;
 
 .partners-list {
 position: absolute;
-z-index: 999999999999999999999999999999;
+z-index: 999;
 background: rgba(255,255,255,.9);
 width: 210px;
 border-radius: 4px;
@@ -1095,4 +1095,9 @@ margin: 199px 0 0 100px;
 .casellula {margin-left:10px;}
 
 
+
+/*==================================
+= z-indexing
+= 999 for everything except top 9999 
+==================================*/
 
