@@ -628,7 +628,15 @@ font-weight: 400;
  SLIDE 2 
 *******************************/
 #slide2{
-	background: #81A56D;
+  background:#81A56D url(../images/heros/September-at-the-Farm-4-of-12.jpg) no-repeat center center; 
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  width:100%;
+
+
+ 
   padding-top:120px;
   position:relative;
   z-index:99;
@@ -679,7 +687,16 @@ left: -150px;
  SLIDE 3 
 *******************************/
 #slide3{
-	background-color:#A27943;
+  background:#A27943 url(../images/heros/applfarm.JPG) no-repeat center center; 
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+
+
+
+
+
   position: relative;
   z-index:999;
 }
@@ -719,10 +736,10 @@ left: 300px;
 
 #slide4{
 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size: auto;
+	background-size: auto;
 	color:#FFF;
 }
 #slide4 .parallaxbg{
@@ -739,11 +756,12 @@ left: 300px;
 *******************************/
 
 #slide5{
-	 background: #563729;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  
+  background:#A27943 url(../images/heros/applfarm.JPG) no-repeat center center; 
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
 	color:#FFF;
   position: relative;
   z-index:999;
@@ -1091,7 +1109,7 @@ margin: 199px 0 0 100px;
 
 #imageGallery {
   position: absolute;
-  top:200px; 
+  top:240px; 
   margin-left:-300px;
 }
 
