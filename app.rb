@@ -17,12 +17,11 @@ set :port, 3000
 
 
 ######################
-####    models       #
+####    CLASSY       #
 ######################
 
 class Emails < ActiveRecord::Base
 end
-
 
 
 ######################

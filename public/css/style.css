@@ -1057,7 +1057,7 @@ font-size: 36px;
 
 
 
-#get-involved-slider,.learnCopy,.partners-list {
+#get-involved-slider,.learnCopy,.partners-list,.contact-info {
   border:10px solid rgba(200,200,200,.3);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  
 }
@@ -1098,6 +1098,9 @@ margin: 199px 0 0 100px;
 #imageGallery img {
   width: 130px;
   height:87px;
+  border-radius:4px;
+  border:1px solid rgba(200,200,200,.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  
 }
 /*==================================
 =      PARTNER STYLES INDI.
@@ -1106,11 +1109,15 @@ margin: 199px 0 0 100px;
 .casellula {margin-left:10px;}
 
 
+.fancy-title-overlay {
+  background: red;
+  position: absolute;
+  z-index:99999;
+  bottom:0;  
+
+}
 
 /*==================================
 = z-indexing
 = 999 for everything except top 9999 
 ==================================*/
-
-
-

@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
-
+    $('[data-behavior~=fademe]').hide();
+    $('[data-behavior~=fademe]').delay(1000).fadeIn(1000);
     //initialise all the plugin goodness
     //richard oreilly 
     //sodigit.al design and development
