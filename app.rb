@@ -3,6 +3,11 @@ require "sinatra"
 # require "Clipboard"
 require "sinatra/activerecord"
 
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == ['admin', 'admin123']
+end
+
+
 #options
 set :port, 3000
 #end options
