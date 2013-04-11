@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
     //Cache some variables
     var links = $('.navigation').find('li');
     slide = $('.slide');
-    button = $('.button');
+    button = $('[data-behavior~=button]')
     mywindow = $(window);
     htmlbody = $('html,body');
 
