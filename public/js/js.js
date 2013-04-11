@@ -88,9 +88,9 @@ $(function(){
     autoSlide:false,
     autoHeight:true,
     preloader: false,
-    hashLinking: true,
-    hashNames: true,
-    hashCrossLinks: true,
+    // hashLinking: true,
+    // hashNames: true,
+    // hashCrossLinks: true,
     dynamicTabs: true,
     crossLinks: true
   });
