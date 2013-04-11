@@ -9,9 +9,9 @@
               $('a.simulateclick').trigger('click');
           });
       </script>
-      <input type="checkbox" name="orderval"  <%= params[:order] == "postcards"  ? 'checked' : 'checked' %> value="postcards">Send me postcards<br>
+      <input type="checkbox" name="orderval"  <%= params[:order] == "postcards"  ? 'checked' : '' %> value="postcards">Send me postcards<br>
 
-      <input type="checkbox" name="orderval" value="stickers" <%= params[:order] == "stickers"  ? 'checked' : 'checked' %>> Send me stickers<br>
+      <input type="checkbox" name="orderval" value="stickers" <%= params[:order] == "stickers"  ? 'checked' : '' %>> Send me stickers<br>
     <% end %>
 
    <input type="submit" class="btn btn-large greensubmit">
