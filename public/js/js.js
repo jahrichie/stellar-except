@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    //initialise all the goodness
+    //initialise all the plugin goodness
     //richard oreilly 
     //sodigit.al design and development
     //holler at me
@@ -47,6 +47,7 @@ jQuery(document).ready(function ($) {
     //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
     function goToByScroll(dataslide) {
+        offset = "50px"
         htmlbody.animate({
             scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
         }, 2000, 'easeInOutQuint');

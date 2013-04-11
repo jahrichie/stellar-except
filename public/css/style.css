@@ -628,7 +628,7 @@ font-weight: 400;
  SLIDE 2 
 *******************************/
 #slide2{
-	background-color:#81A56D;
+	background: #81A56D;
   padding-top:120px;
   position:relative;
   z-index:99;
@@ -1072,7 +1072,7 @@ font-size: 36px;
 .partners-list {
 position: absolute;
 z-index: 999;
-background: rgba(255,255,255,.9);
+background: rgba(255,255,255,.8);
 width: 210px;
 border-radius: 4px;
 color: #000;
@@ -1085,8 +1085,18 @@ margin: 199px 0 0 100px;
 }
 
 .partners-list li:last-child {
-
   margin-top:10px; 
+}
+
+
+#imageGallery {
+  position: absolute;
+  top:200px; 
+  margin-left:-300px;
+}
+
+#imageGallery img {
+  width: 130px;
 }
 /*==================================
 =      PARTNER STYLES INDI.
@@ -1100,4 +1110,6 @@ margin: 199px 0 0 100px;
 = z-indexing
 = 999 for everything except top 9999 
 ==================================*/
+
+
 
