@@ -2,8 +2,10 @@
 require "sinatra"
 # require "Clipboard"
 require "sinatra/activerecord"
+require 'pony'
 
-use Rack::Auth::Basic, "Restricted Area" do |username, password|
+#basic auth
+use Rack::Auth::Basic, "Enter Demo password." do |username, password|
   [username, password] == ['admin', 'admin123']
 end
 
@@ -50,7 +52,6 @@ get '/contact' do
 
   if @emails.save
     # "I DID IT!!!!"
-  require 'pony'
      Pony.mail(
       :from => params[:name] + "<" + params[:email] + ">",
       :to => 'richardjosephoreilly@gmail.com',
