@@ -4,9 +4,9 @@ class CreateEmails < ActiveRecord::Migration
       t.string :email
       t.text :first_name
       t.text :last_name
+      
       t.timestamps
     end
-    Emails.create(email: "My first post", first_name: "And this is the post's content.", last_name: "fugazy")
   end# up
 
   def down

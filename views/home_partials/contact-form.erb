@@ -1,8 +1,10 @@
 <div class="contact-form">
-<form action="" method="post" id="bigjoe">
+
+
+<form action="/contact" method="get" id="bigjoe">
   <input type="text" name="name" class="form" placeholder="Your Name">
   <input type="text" name="email" class="form" placeholder="Your Email">
-  <textarea rows="4" class="form" cols="50" placeholder="<%= params[:partners] == true ? 'Your Message' : 'We hear you wana be a partner?' %>"></textarea>
+  <textarea rows="4" name="msg" class="form" cols="50" placeholder="<%= params[:partners] == true ? 'Your Message' : 'We hear you wana be a partner?' %>"></textarea>
     
        <script type="text/javascript">   
            $(window).bind("load", function() {
@@ -15,11 +17,11 @@
             <% end %>    
           });
       </script>
-      <% if  params[:order].present? %>
-        <input id="check" type="checkbox" name="orderval"  <%= params[:order] == "postcards"  ? 'checked' : '' %> value="postcards">Send me postcards<br>
+      <%# if  params[:order].present? %>
+        <input id="check" type="checkbox" name="postcards"  <%= params[:order] == "postcards"  ? 'checked' : '' %> value="1">Send me postcards<br>
 
-        <input id="check"  type="checkbox" name="orderval" value="stickers" <%= params[:order] == "stickers"  ? 'checked' : '' %>> Send me stickers<br>
-     <% end %>
+        <input id="check"  type="checkbox" name="stickers" value="1" <%= params[:order] == "stickers"  ? 'checked' : '' %>> Send me stickers<br>
+     <%# end %>
 
 <!-- TODO if for partner form and move to helper-->
    
@@ -35,3 +37,5 @@
 </div><!-- contact-info -->
 
  
+
+
