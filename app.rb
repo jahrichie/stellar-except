@@ -12,11 +12,12 @@ end
 
 #options
 set :port, 3000
-#end options
 
-# if Sinatra::Base.development
+configure :development do
   set :database, "sqlite3:///except.db"
-# end 
+end
+
+#end options
 
 
 ######################
