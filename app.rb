@@ -1,6 +1,6 @@
 # app.rb
 require "sinatra"
-# require "Clipboard"
+require "Clipboard"
 require "sinatra/activerecord"
 require 'pony'
 
@@ -11,22 +11,21 @@ end
 
 
 #options
-set :port, 3000
 
-configure :development do
+# configure :development do
   set :database, "sqlite3:///except.db"
-end
+# end
 
 #end options
 
 
 ######################
-####    CLASSY       #
+####    MODELS      #
 ######################
 
 class Emails < ActiveRecord::Base
-  #validates  
-  validates_presence_of :email, message: "Email is required.  "
+  #validate fields  
+  validates_presence_of :email, errors: "Email cannot be blank."
 end
 
 
@@ -40,8 +39,29 @@ get '/' do
 end
 
 
+# get '/contact' do
+#   #create email record
+#   @fullname = params[:name].split
+#   @emails = Emails.create(first_name: @fullname.first, 
+#                           email: params[:email], 
+#                           last_name: @fullname.last,
+#                           msg: params[:msg],
+#                           postcards: params[:postcards],
+#                           stickers: params[:stickers]
+#                           )
+
+#   if @emails.save 
+#     redirect "/", notice: "HYFR!"
+#   else
+#     redirect "", errors: "wsdfasdf"
+#     # @emails.errors.each do |e|
+#     #   puts e
+#     # end #errors block
+#   end #if save
+# end #contact action
+
+
 get '/contact' do
-  #create email record
   @fullname = params[:name].split
   @emails = Emails.create(first_name: @fullname.first, 
                           email: params[:email], 
@@ -51,29 +71,15 @@ get '/contact' do
                           stickers: params[:stickers]
                           )
 
-  if @emails.save
-    # "I DID IT!!!!"
-     Pony.mail(
-      :from => params[:name] + "<" + params[:email] + ">",
-      :to => 'richardjosephoreilly@gmail.com',
-      :subject => params[:name] + " has contacted you",
-      :body => params[:msg],
-      :port => '587',
-      :via => :smtp,
-      :via_options => { 
-        :address              => 'smtp.sendgrid.net', 
-        :port                 => '587', 
-        :enable_starttls_auto => true, 
-        :user_name            => ENV['SENDGRID_USERNAME'], 
-        :password             => ENV['SENDGRID_PASSWORD'], 
-        :authentication       => :plain, 
-        :domain               => ENV['SENDGRID_DOMAIN']
-      })
-
-    redirect "/"
+  # other code, then…
+  if @emails.errors
+    output = @emails.errors
+    # log problems…
+    halt 500, output
+     # redirect "/", errors: output
   else
-    @emails.errors.each do |e|
-      puts e.to_json
-    end #errors block
-  end #if save
-end #contact action
+    haml :show_a_nice_view_to_the_user
+  end
+end
+
+

@@ -1,10 +1,41 @@
 jQuery(document).ready(function ($) {
+
+
+     $( "#accordion" ).accordion({
+          // active: 1,        
+          // collapsible: true,
+          header: "h3",
+          heightStyle: "content"
+        });    
+
+         
+
+     $("a.learn-video-popup").click(function() {
+        // $("#followVideo").hide("slide", { direction: "left" }, 1000);
+
+        $.fancybox({
+                'padding'       : 0,
+                'autoScale'     : false,
+                'transitionIn'  : 'none',
+                'transitionOut' : 'none',
+                'title'         : this.title,
+                'width'     : 680,
+                'height'        : 495,
+                'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+                'type'          : 'swf',
+                'swf'           : {
+                     'wmode'        : 'transparent',
+                    'allowfullscreen'   : 'true',
+                    'autoplay'          : 1
+                }
+            });
+
+        return false;
+    });
+
+
     $('[data-behavior~=fademe]').hide();
     $('[data-behavior~=fademe]').delay(1000).fadeIn(1000);
-    //initialise all the plugin goodness
-    //richard oreilly 
-    //sodigit.al design and development
-    //holler at me
 
     //initialise Stellar.js
     $(window).stellar();
@@ -101,4 +132,4 @@ $(function(){
 
 
 });//end  function
-  
+

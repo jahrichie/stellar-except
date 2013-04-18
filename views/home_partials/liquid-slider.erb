@@ -1,18 +1,11 @@
-<div class="getInvolvedright" style="padding-top:100px;" >
+<h3 class="largeh1nobg padd-top-nav">Do your part! Let's make change in New York!</h3>
+<div class="getInvolvedright" style="padding-top:15px;" >
   <div class="liquid-slider"  id="get-involved-slider">
-    <div style="min-height:400px;">
-      <h2 class="title">Restaurants</h2>
+    <div style="min-height:200px;">
+      <h2 class="title">Food Folks</h2>
         <div id="restaurants">
             <div class="facebookwrapper">
-                <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=501038143241387";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-                <div class="fb-like" data-href="<%= request.url %>" data-send="true" data-width="400" data-show-faces="true"></div>
+
 
             </div><!-- facebookwrapper -->
 
@@ -24,7 +17,7 @@
 
             <div class="clearfix">&nbsp;</div>
             
-            <div class="btn btn-success restBlocks "><i style="font-size:14px" class="icon-cloud-download"> <a href="#">Download Factsheet</a></i></div>
+            <div class="btn btn-success restBlocks "><i style="font-size:14px" class="icon-cloud-download"> <a href="/downloads/EF_FactSheet.pdf">Download fact sheet</a></i></div>
 
           
             <div class="btn btn-success restBlocks "><i style="font-size:14px" class="icon-link"> <a href="#">Promote the link</a></i> </div>
@@ -32,7 +25,7 @@
          
              <div class="btn btn-success restBlocks "><i style="font-size:14px" class="icon-group"> <a href="#">Customers sign the petition</a></i></div>
          
-             <div class="btn btn-success restBlocks "> <i style="font-size:14px" class="icon-envelope"> <a href="#">Customers sign the petition</a></i></div>
+             <div class="btn btn-success restBlocks "> <i style="font-size:14px" class="icon-envelope"> <a href="/downloads/petition.pdf">Customers sign the petition</a></i></div>
 
               <div  class="btn btn-success restBlocks "><i style="font-size:14px"  class="icon-fighter-jet"> <a class="yo11"  data-behavior="orderform" href="/?order=stickers">Request a sticker for the inside of your window.</a></i></div>
 
@@ -48,7 +41,7 @@
 
     </div>
     <div>
-      <h2 class="title">Consumers</h2>
+      <h2 class="title">&nbsp;&nbsp;Individuals</h2>
       <h3> How to get involed </h3>
 
       <p>
@@ -62,17 +55,20 @@
             <h1 class="suggestedlanguage">Suggested language <span class="extrasmall">(Click below to copy)</span></h1>
           <blockquote>  Support the Farmworkers Fair Labor Practices Act (FFLPA)! 
 
-          <% suggested_lang = "I, as a New Yorker, care about the conditions under which produce is picked and cows are milked. 
-                          
-                    Why has it taken this long to get basic rights for farmworkers? How have we reasoned to think it is OK to specifically exclude farmworkers from the basic rights that all other industries enjoy?
-              
-                    While there are not many farmworkers in your constituency, I am hereby declaring my support of fair rights for New York farmworkers, and therefore compel you to do what is right, and support FFLPA.
-                    Sincerely, 
-                    
-                    Only shop at restaurants that participate. Use our map of participating restaurants to know where to dine.
-                    Spread the word to your friends" %>
+          <% suggested_lang = <<-eos
+            I, as a New Yorker, care about the conditions under which produce is picked and cows are milked. 
 
-          <%# Clipboard.copy suggested_lang %>
+            Why has it taken this long to get basic rights for farmworkers? How have we reasoned to think it is OK to specifically exclude farmworkers from the basic rights that all other industries enjoy?
+
+            While there are not many farmworkers in your constituency, I am hereby declaring my support of fair rights for New York farmworkers, and therefore compel you to do what is right, and support FFLPA.
+            Sincerely, 
+
+            Only shop at restaurants that participate. Use our map of participating restaurants to know where to dine.
+            Spread the word to your friends
+            eos
+          %>
+
+          <%= Clipboard.copy suggested_lang %>
 
 
           </blockquote>

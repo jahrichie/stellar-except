@@ -247,3 +247,9 @@
 	background: #000;
 	background: rgba(0, 0, 0, .8);
 }
+
+.fancybox-opened  {
+	margin-top:50px;
+	position: relative;
+	z-index:9999999999999999999;	
+}

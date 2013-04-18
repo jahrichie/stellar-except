@@ -1,41 +1,39 @@
-<div class="contact-form">
+<div id="contact-width-constraint">
+  <div class="contact-form">
 
 
-<form action="/contact" method="get" id="bigjoe">
-  <input type="text" name="name" class="form" placeholder="Your Name">
-  <input type="text" name="email" class="form" placeholder="Your Email">
-  <textarea rows="4" name="msg" class="form" cols="50" placeholder="<%= params[:partners] == true ? 'Your Message' : 'We hear you wana be a partner?' %>"></textarea>
-    
-       <script type="text/javascript">   
-           $(window).bind("load", function() {
-            <% if  params[:order].present? %>
-              $( "#check" ).button();
-              $('a.simulateclick').trigger('click');
-            <% end %>
-            <% if  params[:partner].present? %>
+  <form action="/contact" method="get" id="bigjoe">
+    <input type="text" name="name" class="form" placeholder="Your Name">
+    <input type="text" name="email" class="form" placeholder="Your Email">
+    <textarea rows="4" name="msg" class="form" cols="50" placeholder="<%= params[:partners] == true ? 'Your Message' : 'We hear you wana be a partner?' %>"></textarea>
+      
+         <script type="text/javascript">   
+             $(window).bind("load", function() {
+              <% if  params[:order].present? %>
+                $( "#check" ).button();
                 $('a.simulateclick').trigger('click');
-            <% end %>    
-          });
-      </script>
-      <%# if  params[:order].present? %>
-        <input id="check" type="checkbox" name="postcards"  <%= params[:order] == "postcards"  ? 'checked' : '' %> value="1">Send me postcards<br>
+              <% end %>
+              <% if  params[:partner].present? %>
+                  $('a.simulateclick').trigger('click');
+              <% end %>    
+            });
+        </script>
+        <%# if  params[:order].present? %>
+          <input id="check" type="checkbox" name="postcards"  <%= params[:order] == "postcards"  ? 'checked' : '' %> value="1">Send me postcards<br>
 
-        <input id="check"  type="checkbox" name="stickers" value="1" <%= params[:order] == "stickers"  ? 'checked' : '' %>> Send me stickers<br>
-     <%# end %>
+          <input id="check"  type="checkbox" name="stickers" value="1" <%= params[:order] == "stickers"  ? 'checked' : '' %>> Send me stickers<br>
+       <%# end %>
 
-<!-- TODO if for partner form and move to helper-->
-   
-   <input type="submit" class="btn btn-large greensubmit">
+  <!-- TODO if for partner form and move to helper-->
+     
+     <input type="submit" class="btn btn-large greensubmit">
 
-  </form>
-</div><!-- contact-form -->
+    </form>
+  </div><!-- contact-form -->
 
-<div class="contact-info">
-  <span class="header">Holler at Us</span>
-  <span><i class="icon-envelope"></i> <a href="#">info@exceptfarmworkers.com</a></span>
-  <span> <i class="icon-phone"></i> 800.000.0000</span>
+  <div class="contact-info">
+    <span class="header">Holler at Us</span>
+    <span><i class="icon-envelope"></i> <a href="#">info@exceptfarmworkers.com</a></span>
+    <span> <i class="icon-phone"></i> 800.000.0000</span>
+  </div><!-- contact-info -->
 </div><!-- contact-info -->
-
- 
-
-

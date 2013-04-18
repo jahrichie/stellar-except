@@ -488,19 +488,6 @@ input[type="submit"].btn.btn-mini {
 /* CSS Document */
 /*.logo {background:#F6303E;margin-bottom:20px;}*/
 
-a:hover { -webkit-transition: color  200ms ease-in;
-	-o-transition:color  200ms ease-in;}
-@font-face {
-    font-family: 'BebasRegular';
-    src: url('font/BEBAS___-webfont.eot');
-    src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/BEBAS___-webfont.woff') format('woff'),
-         url('font/BEBAS___-webfont.ttf') format('truetype'),
-         url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 html,body{
  font-family: 'BebasRegular';
 	width:100%;
@@ -591,9 +578,9 @@ font-family: "omnes-pro",sans-serif;
 	font-size:50px;
 	font-weight:bold;
 	color:#000;
-font-family: "hotel-open",sans-serif;
-font-style: normal;
-font-weight: 400;
+  font-family: "hotel-open",sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 .button{
 	display:block;
@@ -616,6 +603,7 @@ font-weight: 400;
  SLIDE 1 
 *******************************/
 #slide1{
+
 	 background:#BBBD94 url(../images/heros/apple-trees.png) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -693,11 +681,7 @@ left: -150px;
   -moz-background-size: auto;
   -o-background-size: auto;
   background-size: auto;
-
-
-
-
-
+  width:100%;
   position: relative;
   z-index:999;
 }
@@ -757,7 +741,6 @@ left: 300px;
 *******************************/
 
 #slide5{
-  
   background:#A27943 url(../images/heros/dormat-8430119966_68cb293270_h.jpg) no-repeat center center; 
   -webkit-background-size: auto;
   -moz-background-size: auto;
@@ -766,17 +749,35 @@ left: 300px;
 	color:#FFF;
   position: relative;
   z-index:999;
+  height:100%;
 }
 
- 
+
+.youtubeWrapper {
+  margin-top:10px;
+  float:left;
+  width:560px;
+  margin-left:30px;
+}
 
 .twitter-wrapper {
-padding-top: 180px;
-margin-left: 450px;
+/*padding-top: 140px;
+margin-left: 650px;
 height: 300px;
 color: #000;
-width: 450px;
+width: 450px;*/
+margin-left:20px;
+float:left;
+margin-top:10px;
 }
+
+
+
+.pad-top-nav {
+  padding-top:100px; 
+}
+
+
 
 .nav-tabs.nav-stacked > li > a {
 background: #FFF
@@ -811,11 +812,28 @@ p,body {
 }
 
 .learnCopy li {
-  font-size:12px;
+  font-size:16px;
   margin:3px;
   list-style: circle;  
   margin-left:20px;
 }
+
+#accordion h3{
+ margin-left:15px; 
+ color:#81A56D;
+}
+
+#accordion h3:hover{
+ cursor: pointer;
+}
+
+
+
+#accordion h3:focus {
+    outline-width: 0;
+}
+
+
 
 .button {
 	font-size: 40px;
@@ -913,6 +931,10 @@ input.form {}
   margin-left:50px;  
 }
 
+
+#contact-width-constraint {
+  width:1250px;  
+}
 
 .one-sign:before {
    content: "1";
@@ -1055,13 +1077,34 @@ z-index: 2; }
 
 
 .largeh1 {
+padding:4px;
+/*width: 1080px;*/  
 margin-left:20px; 
 font-family: "hotel-open",sans-serif;
 font-style: normal;
 font-weight: 400;
 color: #000;
-font-size: 46px;
+background: #FFF;
+font-size: 26px;
+margin-right:100px;
+
 }
+
+
+.largeh1nobg {
+padding:4px;
+/*width: 1080px;*/  
+margin-left:20px; 
+font-family: "hotel-open",sans-serif;
+font-style: normal;
+font-weight: 400;
+color: #000;
+/*background: #FFF;*/
+font-size: 26px;
+margin-right:100px;
+
+}
+
 
 
 .smallerh1 {
@@ -1091,7 +1134,7 @@ font-size: 36px;
 .partners-list {
 position: absolute;
 z-index: 999;
-background: rgba(255,255,255,.8);
+background: rgba(255,255,255,.9);
 width: 210px;
 border-radius: 4px;
 color: #000;
@@ -1128,15 +1171,12 @@ margin: 199px 0 0 100px;
 .casellula {margin-left:10px;}
 
 
-.fancy-title-overlay {
-  background: red;
-  position: absolute;
-  z-index:99999;
-  bottom:0;  
-
-}
-
 /*==================================
 = z-indexing
 = 999 for everything except top 9999 
 ==================================*/
+
+
+.padd-top-nav {
+  padding-top:100px;  
+}

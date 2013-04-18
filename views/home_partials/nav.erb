@@ -1,6 +1,20 @@
-<div class="logo"><a href="#"><img src="images/apple.png"></a><span>Except  Farmworkers</span></div>
-<li data-slide="1"><i class="icon-home"></i> Home</li>
-<li data-slide="2"><i class="icon-lightbulb"></i> Learn</li>
-<li data-slide="3"><i class="icon-medkit"></i> Get Involved</li>
-<li data-slide="4"><i class="icon-group"></i> Partners</li>
-<li data-slide="5"><i class="icon-envelope"></i> Contact</li>
+<ul class="navigation">
+  <div class="logo"><a href="#"><img src="images/apple.png"></a><span>Except  Farmworkers</span></div>
+  <li data-slide="1"><i class="icon-home"></i> Home</li>
+  <li data-slide="2"><i class="icon-lightbulb"></i> Learn</li>
+  <li data-slide="3"><i class="icon-medkit"></i> Get Involved</li>
+  <li data-slide="4"><i class="icon-group"></i> Partners</li>
+  <li data-slide="5"><i class="icon-envelope"></i> Contact</li>
+
+  <li>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=501038143241387";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-like" data-href="<%= request.url %>" data-send="true" data-width="50" data-show-faces="true"></div>
+  </li>
+ </ul>
