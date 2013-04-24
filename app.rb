@@ -1,7 +1,7 @@
 # app.rb
 require "sinatra"
 # require "Clipboard"
-require "sinatra/activerecord"
+# require "sinatra/activerecord"
 # require 'pony'
 
 #basic auth
@@ -13,7 +13,7 @@ require "sinatra/activerecord"
 #options
 
 # configure :development do
-  set :database, "sqlite3:///except.db"
+  # set :database, "sqlite3:///except.db"
 # end
 
 #end options
