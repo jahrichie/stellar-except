@@ -5,9 +5,9 @@ require "sinatra/activerecord"
 require 'pony'
 
 #basic auth
-use Rack::Auth::Basic, "Enter Demo password." do |username, password|
-  [username, password] == ['admin', 'admin123']
-end
+# use Rack::Auth::Basic, "Enter Demo password." do |username, password|
+#   [username, password] == ['admin', 'admin123']
+# end
 
 
 #options
