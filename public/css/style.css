@@ -606,7 +606,7 @@ font-family: "omnes-pro",sans-serif;
 *******************************/
 #slide1{
 
-	 background:#BBBD94 url(../images/heros/madapplesLARGE.jpg) no-repeat center center; 
+	 background:#BBBD94 url(../images/heros/apple-trees.png) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -631,46 +631,8 @@ font-family: "omnes-pro",sans-serif;
 
 
 }
-#slide2 img:first-child{
-	position:absolute;
-top: 500px;
-left: -150px;
-}
-#slide2 img:nth-child(2){
-	position:absolute;
-	top:300px;
-	left:100px;
-}
-#slide2 img:nth-child(3){
-	position:absolute;
-	top:600px;
-	left:300px;
-}
-#slide2 img:nth-child(4){
-	position:absolute;
-	top:400px;
-	left:300px;
-}
-#slide2 img:nth-child(5){
-	position:absolute;
-	top:600px;
-	right:300px;
-}
-#slide2 img:nth-child(6){
-	position:absolute;
-	top:600px;
-	right:300px;
-}
-#slide2 img:nth-child(7){
-	position:absolute;
-	top:400px;
-	right:100px;
-}
-#slide2 img:nth-child(8){
-	position:absolute;
-	top:100px;
-	right:300px;
-}
+
+
 /******************************
  SLIDE 3 
 *******************************/
@@ -1220,7 +1182,10 @@ margin: 199px 0 0 100px;
   margin-left:970px;
 }
 
-
-.gmnoprint {
-  top:130px !important;
+.nytimes  {
+  text-align:center;
+  width:300px;
+  display: inline; 
+  float:left; 
 }
+
