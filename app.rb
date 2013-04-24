@@ -2,7 +2,7 @@
 require "sinatra"
 # require "Clipboard"
 require "sinatra/activerecord"
-require 'pony'
+# require 'pony'
 
 #basic auth
 # use Rack::Auth::Basic, "Enter Demo password." do |username, password|
