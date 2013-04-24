@@ -23,10 +23,10 @@ require "sinatra"
 ####    MODELS      #
 ######################
 
-class Emails < ActiveRecord::Base
-  #validate fields  
-  validates_presence_of :email, errors: "Email cannot be blank."
-end
+# class Emails < ActiveRecord::Base
+#   #validate fields  
+#   validates_presence_of :email, errors: "Email cannot be blank."
+# end
 
 
 
