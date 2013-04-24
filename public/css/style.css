@@ -571,8 +571,10 @@ font-family: "omnes-pro",sans-serif;
 	position:relative;
 }
 .slideno{
-	margin-left:10px;
+  background:rgba(255,255,255,0.85);
+	 padding:10px;
 	position:absolute;
+  z-index:999999999999999;
 	bottom:0px;
 	left:0px;
 	font-size:50px;
@@ -617,16 +619,13 @@ font-family: "omnes-pro",sans-serif;
  SLIDE 2 
 *******************************/
 #slide2{
-  background:#81A56D url(../images/heros/September-at-the-Farm-4-of-12.jpg) no-repeat center center; 
+  background:#81A56D url(../images/heros/moo.jpg) no-repeat center center; 
   -webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
   background-size: auto;
   width:100%;
-
-
- 
-  padding-top:120px;
+  padding-top:90px;
   position:relative;
   z-index:99;
 
@@ -814,13 +813,28 @@ p,body {
 .learnCopy li {
   font-size:16px;
   margin:3px;
-  list-style: circle;  
+  list-style: none;  
   margin-left:20px;
+}
+
+#except li:before {
+  content: "* ";
+  font-size:24px;
+  color:#F6303E;
+  line-height: 24px;
+}
+
+#laborbill li {
+  list-style: disc;
+}
+
+.learnCopy li:first-child{
+  margin-top:-15px;  
 }
 
 #accordion h3{
  margin-left:15px; 
- color:#81A56D;
+ /*color:#81A56D;*/
 }
 
 #accordion h3:hover{
@@ -1077,6 +1091,7 @@ z-index: 2; }
 
 
 .largeh1 {
+text-transform:uppercase;
 padding:4px;
 /*width: 1080px;*/  
 margin-left:20px; 
@@ -1084,10 +1099,14 @@ font-family: "hotel-open",sans-serif;
 font-style: normal;
 font-weight: 400;
 color: #000;
-background: #FFF;
-font-size: 26px;
+background: rgba(255,255,255,.9);
+font-size: 36px;
 margin-right:100px;
 
+
+}
+.largeh1 {
+  text-align:center;
 }
 
 
@@ -1179,4 +1198,11 @@ margin: 199px 0 0 100px;
 
 .padd-top-nav {
   padding-top:100px;  
+}
+
+#holdfb {
+  width:300px;
+  position: absolute;
+  margin-top:-45px;
+  margin-left:1000px;
 }
