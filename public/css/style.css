@@ -572,9 +572,9 @@ font-family: "omnes-pro",sans-serif;
 }
 .slideno{
   background:rgba(255,255,255,0.85);
-	 padding:10px;
+  padding:10px;
 	position:absolute;
-  z-index:999999999999999;
+  z-index:9;
 	bottom:0px;
 	left:0px;
 	font-size:50px;
@@ -606,7 +606,7 @@ font-family: "omnes-pro",sans-serif;
 *******************************/
 #slide1{
 
-	 background:#BBBD94 url(../images/heros/apple-trees.png) no-repeat center center; 
+	 background:#BBBD94 url(../images/heros/madapplesLARGE.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -941,27 +941,37 @@ input.form {}
   float:left;margin:4px;
 }
 
-.buttonfloat {
-  margin-left:50px;  
-}
-
+ 
 
 #contact-width-constraint {
   width:1250px;  
 }
 
+.one-sign {margin-left:25px;}
 .one-sign:before {
    content: "1";
    font-size:18px;
    padding-right:20px;
-   color:#999;
+   color:#000;
    position: relative;
    z-index:999;
-   margin-left:100px;
+ 
 }
 
 .two-sign:before {
    content: "2";
+   font-size:18px;
+   padding-right:20px;
+   padding-left:-40px;
+   color:#000;
+   position: relative;
+   z-index:999;
+
+}
+
+.three-sign {float:left;}
+.three-sign:before {
+   content: "3";
    font-size:18px;
    padding-right:20px;
    padding-left:-40px;
@@ -980,7 +990,10 @@ blockquote:hover {
   background:rgba(200,200,200,.7);  
    cursor: copy;
 }
-
+blockquote:active {
+  background:yellow;  
+   cursor: copy;
+}
 
 
 /*
@@ -1119,7 +1132,7 @@ font-style: normal;
 font-weight: 400;
 color: #000;
 /*background: #FFF;*/
-font-size: 26px;
+font-size: 36px;
 margin-right:100px;
 
 }
@@ -1132,7 +1145,7 @@ font-family: "hotel-open",sans-serif;
 font-style: normal;
 font-weight: 400;
 color: #000;
-font-size: 36px;
+font-size: 26px;
 }
 
 
@@ -1197,12 +1210,17 @@ margin: 199px 0 0 100px;
 
 
 .padd-top-nav {
-  padding-top:100px;  
+  padding-top:80px;  
 }
 
 #holdfb {
   width:300px;
   position: absolute;
   margin-top:-45px;
-  margin-left:1000px;
+  margin-left:970px;
+}
+
+
+.gmnoprint {
+  top:130px !important;
 }

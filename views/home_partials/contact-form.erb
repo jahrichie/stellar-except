@@ -18,11 +18,10 @@
               <% end %>    
             });
         </script>
-        <%# if  params[:order].present? %>
-          <input id="check" type="checkbox" name="postcards"  <%= params[:order] == "postcards"  ? 'checked' : '' %> value="1">Send me postcards<br>
 
-          <input id="check"  type="checkbox" name="stickers" value="1" <%= params[:order] == "stickers"  ? 'checked' : '' %>> Send me stickers<br>
-       <%# end %>
+          <input id="check" class="postcardcheck" type="checkbox" name="postcards"  value="1">Send me postcards<br>
+
+          <input id="check"  type="checkbox" name="stickers" value="1" class="stickercheck"> Send me stickers<br>
 
   <!-- TODO if for partner form and move to helper-->
      

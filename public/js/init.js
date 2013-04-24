@@ -2,6 +2,34 @@
 
 jQuery(document).ready(function ($) {
 
+    $(".slideto5").click(function() {
+      // alert("Handler for .click() called.");
+      $('a.simulateclick4').trigger('click');
+    });
+
+
+    $(".slideto5postcards").click(function() {
+       alert("Handler for .click() called.");
+      $('a.simulateclick').trigger('click');
+      $('.postcardcheck').prop('checked', true);
+    });
+
+    $(".slideto5stickers").click(function() {
+      // alert("Handler for .click() called.");
+      $('a.simulateclick').trigger('click');
+      $('.stickercheck').prop('checked', true);
+    });
+
+
+    // $(".checkpostcards").click(function() {
+    //     alert("Handler for .click() called.");
+        
+    // });
+
+
+
+    
+    
 
      $( "#accordion" ).accordion({
           // active: 1,        
@@ -37,7 +65,7 @@ jQuery(document).ready(function ($) {
 
 
     $('[data-behavior~=fademe]').hide();
-    $('[data-behavior~=fademe]').delay(1000).fadeIn(1000);
+    $('[data-behavior~=fademe]').delay(3000).fadeIn(1000);
 
     //initialise Stellar.js
     $(window).stellar();
@@ -134,4 +162,10 @@ $(function(){
 
 
 });//end  function
+
+
+
+$(window).bind("load", function() {
+   $(".uiIconText").delay(90000).css('color', 'white');
+});
 

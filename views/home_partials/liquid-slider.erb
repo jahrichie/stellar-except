@@ -1,5 +1,5 @@
 <div class="padd-top-nav">&nbsp;</div>
-<h3 class="largeh1" style="width:780px;margin-left:170px;padding:10px">Do your part! Let's make change in New York!</h3>
+<h3 class="largeh1" style="width:903px;margin-left:170px;padding:10px"><i class="icon-info-sign"></i> Do your part! Let's make change <br>in New York!</h3>
 <div class="getInvolvedright" style="padding-top:15px;" >
   <div class="liquid-slider"  id="get-involved-slider">
     <div style="min-height:200px;">
@@ -7,10 +7,12 @@
         <div id="restaurants">
             <div class="facebookwrapper">
 
-
+              <h3 class="smallerh1" style="margin-top:20px;width:500px;">Tweet about the campaign:</h3>
             </div><!-- facebookwrapper -->
 
             <div class="twitterwrapper">
+            <div class="clearfix">&nbsp;</div>
+            
                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= request.url %>" data-text="Support equal rights for farmworkers in New York. Get involved! #efny http://bit.ly/11OtsZx" data-via="exceptny" data-size="large" data-related="exceptny" data-hashtags="exceptny">Tweet</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
                 </script>  
@@ -18,21 +20,25 @@
 
             <div class="clearfix">&nbsp;</div>
             
-            <div class="btn btn-success restBlocks "><i style="font-size:14px" class="icon-cloud-download"> <a href="/downloads/EF_FactSheet.pdf">Download fact sheet</a></i></div>
+            <div class="btn btn-success restBlocks "><i style="font-size:14px" class="icon-cloud-download"> <a href="/downloads/EF_FactSheet.pdf" target="_blank">Download fact sheet</a></i></div>
 
           
-            <div class="btn btn-success restBlocks "><i style="font-size:14px" class="icon-link"> <a href="#">Promote the link</a></i> </div>
-             
-         
-             <div class="btn btn-success restBlocks "><i style="font-size:14px" class="icon-group"> <a href="#">Customers sign the petition</a></i></div>
-         
-             <div class="btn btn-success restBlocks "> <i style="font-size:14px" class="icon-envelope"> <a href="/downloads/petition.pdf">Customers sign the petition</a></i></div>
+        <!--     <div class="btn btn-success restBlocks "><i style="font-size:14px" class="icon-link"> <a href="#">Promote the link</a></i> </div>
+              -->
+      
+             <div class="btn btn-success restBlocks "> <i style="font-size:14px" class="icon-cloud-download"> <a href="/downloads/petition.pdf" target="_blank">Customers sign the petition</a></i></div>
 
-              <div  class="btn btn-success restBlocks "><i style="font-size:14px"  class="icon-fighter-jet"> <a class="yo11"  data-behavior="orderform" href="/?order=stickers">Request a sticker for the inside of your window.</a></i></div>
+              <div  class="btn btn-success restBlocks "><i style="font-size:14px"  class="icon-fighter-jet"> <a  data-behavior="orderform" href="javascript:void(0)" class="slideto5stickers">Request a sticker for the inside of your window.</a></i></div>
 
-              <div  class="btn btn-success restBlocks"><i style="font-size:14px"  class="icon-fighter-jet"> <a class="yo11" data-behavior="orderform" href="/?order=postcards">Request some postcards about farmworker’s rights</a> </i></div>  
+              <div  class="btn btn-success restBlocks"><i style="font-size:14px"  class="icon-fighter-jet"> <a  data-behavior="orderform" href="javascript:void(0)" class="slideto5postcards">Request some postcards about farmworker’s rights</a> </i></div>  
 
-              <div  class="btn btn-success restBlocks "><i style="font-size:14px"  class="icon-envelope"> <a href="#">Email us to get added to our map.</a></i></div>  
+              <div  class="btn btn-success restBlocks "><i style="font-size:14px"  class="icon-envelope"> <a href="javascript:void(0)" class="slideto5">Email us to get added to our map.</a></i></div>  
+
+              <div  class="btn btn-success restBlocks "><i style="font-size:14px"  class="icon-envelope"> <a href="javascript:void(0)" class="slideto5">Make yourself available for interviews with the press.</a></i></div>  
+
+
+              <div  class="btn btn-success restBlocks "><i style="font-size:14px"  class="icon-envelope"> <a href="javascript:void(0)" class="slideto5">Lend us a quote for your website as to why you are participating</a></i></div>  
+
               
         </div>
 
@@ -43,7 +49,7 @@
     </div>
     <div>
       <h2 class="title">&nbsp;&nbsp;Individuals</h2>
-      <h3> How to get involed </h3>
+      <h3> How to get involed is easy 1,2,3 </h3>
 
       <p>
         <ul>
@@ -51,9 +57,16 @@
             
 
            <li class="two-sign buttonfloat" > <a href="http://www.nysenate.gov/nyss_senator_search/" target="_blank" class="btn btn-success">Contact you state senator directly</a></li>
+
+           <li class="three-sign buttonfloat" > <a href="javascript:void(0)" data-slide="5"  target="_blank" class="btn btn-success slideto5">Use our map to find restaurants partner</a></li>
+
+
+             
+
+
            <div class="clearfix">&nbsp;</div>
             
-            <h1 class="suggestedlanguage">Suggested language <span class="extrasmall">(Click below to copy)</span></h1>
+            <h1 class="suggestedlanguage">Suggested language to contact your senator <span class="extrasmall">(Click below to copy)</span></h1>
           <blockquote>  Support the Farmworkers Fair Labor Practices Act (FFLPA)! 
 
           <% suggested_lang = <<-eos
@@ -70,9 +83,9 @@
           %>
 
           <%= Clipboard.copy suggested_lang %>
-
-
           </blockquote>
+
+         
       </ul>
       </p>
 
