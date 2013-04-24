@@ -2,8 +2,8 @@
 source "https://rubygems.org"
 
 gem "sinatra"
-# gem "activerecord"
-# gem "sinatra-activerecord"
+gem "activerecord"
+gem "sinatra-activerecord"
 gem "heroku"
 # gem "clipboard"
 # gem "pony"
@@ -15,6 +15,7 @@ group :development do
 end
 
 gem "pg"
+
 # gem "activerecord-sqlite3-adapter"
 
 # group :production do

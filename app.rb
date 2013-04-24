@@ -62,24 +62,24 @@ end
 
 
 get '/contact' do
-  @fullname = params[:name].split
-  @emails = Emails.create(first_name: @fullname.first, 
-                          email: params[:email], 
-                          last_name: @fullname.last,
-                          msg: params[:msg],
-                          postcards: params[:postcards],
-                          stickers: params[:stickers]
-                          )
+  # @fullname = params[:name].split
+  # @emails = Emails.create(first_name: @fullname.first, 
+  #                         email: params[:email], 
+  #                         last_name: @fullname.last,
+  #                         msg: params[:msg],
+  #                         postcards: params[:postcards],
+  #                         stickers: params[:stickers]
+  #                         )
 
-  # other code, then…
-  if @emails.errors
-    output = @emails.errors
-    # log problems…
-    halt 500, output
-     # redirect "/", errors: output
-  else
-    haml :show_a_nice_view_to_the_user
-  end
+  # # other code, then…
+  # if @emails.errors
+  #   output = @emails.errors
+  #   # log problems…
+  #   halt 500, output
+  #    # redirect "/", errors: output
+  # else
+  #   haml :show_a_nice_view_to_the_user
+  # end
 end
 
 

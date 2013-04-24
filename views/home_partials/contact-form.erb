@@ -7,17 +7,6 @@
     <input type="text" name="email" class="form" placeholder="Your Email">
     <textarea rows="4" name="msg" class="form" cols="50" placeholder="<%= params[:partners] == true ? 'Your Message' : 'We hear you wana be a partner?' %>"></textarea>
       
-         <script type="text/javascript">   
-             $(window).bind("load", function() {
-              <% if  params[:order].present? %>
-                $( "#check" ).button();
-                $('a.simulateclick').trigger('click');
-              <% end %>
-              <% if  params[:partner].present? %>
-                  $('a.simulateclick').trigger('click');
-              <% end %>    
-            });
-        </script>
 
           <input id="check" class="postcardcheck" type="checkbox" name="postcards"  value="1">Send me postcards<br>
 
