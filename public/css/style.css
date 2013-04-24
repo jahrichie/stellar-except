@@ -914,7 +914,7 @@ input.form {}
    content: "1";
    font-size:18px;
    padding-right:20px;
-   color:#000;
+   color:#888;
    position: relative;
    z-index:999;
  
@@ -925,7 +925,7 @@ input.form {}
    font-size:18px;
    padding-right:20px;
    padding-left:-40px;
-   color:#000;
+   color:#888;
    position: relative;
    z-index:999;
 
@@ -937,7 +937,7 @@ input.form {}
    font-size:18px;
    padding-right:20px;
    padding-left:-40px;
-   color:#000;
+   color:#888;
    position: relative;
    z-index:999;
 
