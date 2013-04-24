@@ -2,14 +2,20 @@
 
 jQuery(document).ready(function ($) {
 
-    $(".slideto5").click(function() {
+    $(".slideto4").click(function() {
       // alert("Handler for .click() called.");
       $('a.simulateclick4').trigger('click');
     });
 
 
+    $(".slideto5").click(function() {
+      // alert("Handler for .click() called.");
+      $('a.simulateclick').trigger('click');
+    });
+
+
     $(".slideto5postcards").click(function() {
-       alert("Handler for .click() called.");
+       // alert("Handler for .click() called.");
       $('a.simulateclick').trigger('click');
       $('.postcardcheck').prop('checked', true);
     });
