@@ -620,7 +620,7 @@ font-family: "omnes-pro",sans-serif;
  SLIDE 2 
 *******************************/
 #slide2{
-  background:#81A56D url(../images/heros/moo.jpg) no-repeat center center; 
+  background: url(../images/heros/moo.jpg) no-repeat center center; 
   -webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
@@ -728,7 +728,7 @@ margin-left: 650px;
 height: 300px;
 color: #000;
 width: 450px;*/
-margin-left:20px;
+margin-left:45  px;
 float:left;
 margin-top:15px;
 }
@@ -774,7 +774,7 @@ p,body {
 }
 
 .learnCopy li {
-  font-size:16px;
+  font-size:14px;
   margin:3px;
   list-style: none;  
   margin-left:20px;
@@ -792,7 +792,7 @@ p,body {
 }
 
 .learnCopy li:first-child{
-  margin-top:-15px;  
+  /*margin-top:-15px;  */
 }
 
 #accordion h3{
@@ -911,11 +911,11 @@ input.form {}
   width:1250px;  
 }
 
-.one-sign {margin-left:25px;}
+.one-sign {margin-left:35px;}
 .one-sign:before {
    content: "1";
    font-size:18px;
-   padding-right:20px;
+   padding-right:10px;
    color:#888;
    position: relative;
    z-index:999;
@@ -925,7 +925,7 @@ input.form {}
 .two-sign:before {
    content: "2";
    font-size:18px;
-   padding-right:20px;
+   padding-right:10px;
    padding-left:-40px;
    color:#888;
    position: relative;
@@ -937,7 +937,7 @@ input.form {}
 .three-sign:before {
    content: "3";
    font-size:18px;
-   padding-right:20px;
+   padding-right:10px;
    padding-left:-40px;
    color:#888;
    position: relative;
@@ -1197,4 +1197,5 @@ margin: 199px 0 0 100px;
   display: inline; 
   float:left; 
 }
+
 

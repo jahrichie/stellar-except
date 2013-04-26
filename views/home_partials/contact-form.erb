@@ -5,7 +5,7 @@
   <form action="/contact" method="get" id="bigjoe">
     <input type="text" name="name" class="form" placeholder="Your Name">
     <input type="text" name="email" class="form" placeholder="Your Email">
-    <textarea rows="4" name="msg" class="form" cols="50" placeholder="<%= params[:partners] == true ? 'Your Message' : 'We hear you wana be a partner?' %>"></textarea>
+    <textarea rows="4" name="msg" class="form" cols="50" placeholder="Enter your message"></textarea>
       
 
           <input id="check" class="postcardcheck" type="checkbox" name="postcards"  value="1">Send me postcards<br>
@@ -24,6 +24,8 @@
 
   <div class="contact-info">
     <span class="header">Contact Us</span>
-    <span><i class="icon-envelope"></i> <a href="#">info@exceptfarmworkers.com</a></span>
+    <span>
+      <i class="icon-envelope"></i> <a href="#">info@exceptfarmworkers.com</a>
+    </span>
   </div><!-- contact-info -->
 </div><!-- contact-info -->

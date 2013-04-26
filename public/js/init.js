@@ -27,22 +27,32 @@ jQuery(document).ready(function ($) {
     });
 
 
-    // $(".checkpostcards").click(function() {
-    //     alert("Handler for .click() called.");
-        
-    // });
+    $(".slideto5partner").click(function() {
+      // alert("Handler for .click() called.");
+      $('a.simulateclick').trigger('click');
+      $('.stickermap').prop('checked', true);
+    });
 
 
 
-    
-    
+
+
+
+
+    var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+
 
      $( "#accordion" ).accordion({
-          // active: 1,        
+          // active: "active",  
+           icons: icons,      
           // collapsible: true,
           header: "h3",
           heightStyle: "content"
         });    
+
 
          
 
