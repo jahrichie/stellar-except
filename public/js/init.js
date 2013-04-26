@@ -7,12 +7,10 @@ jQuery(document).ready(function ($) {
       $('a.simulateclick4').trigger('click');
     });
 
-
     $(".slideto5").click(function() {
       // alert("Handler for .click() called.");
       $('a.simulateclick').trigger('click');
     });
-
 
     $(".slideto5postcards").click(function() {
        // alert("Handler for .click() called.");
@@ -33,9 +31,10 @@ jQuery(document).ready(function ($) {
       $('.stickermap').prop('checked', true);
     });
 
-
-
-
+  // $(':checkbox').iphoneStyle({
+  //   checkedLabel: 'YES',
+  //   uncheckedLabel: 'NO'
+  // });
 
 
 
