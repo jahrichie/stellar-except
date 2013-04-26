@@ -493,7 +493,14 @@ html,body{
 	width:100%;
 	height:100%;
 }
-.logo {width:200px;margin-left:50px;margin-top:10px;float:left;margin-right:100px;}
+.logo {
+  width: 200px;
+  margin-left: 50px;
+  margin-top: 14px;
+  float: left;
+  margin-right: 51px;
+}
+
 .logo img {width:40px;}
 .logo span {
 	font-family: "omnes-pro",sans-serif;
