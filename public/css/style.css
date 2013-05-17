@@ -626,10 +626,10 @@ font-family: "omnes-pro",sans-serif;
 *******************************/
 #slide2{
   background: url(../images/heros/moo.jpg) no-repeat center center; 
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  -o-background-size: auto;
-  background-size: auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
   width:100%;
   padding-top:90px;
   position:relative;
@@ -644,10 +644,10 @@ font-family: "omnes-pro",sans-serif;
 *******************************/
 #slide3{
   background:#A27943 url(../images/heros/applfarm.JPG) no-repeat center center; 
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  -o-background-size: auto;
-  background-size: auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
   width:100%;
   position: relative;
   z-index:999;
@@ -709,10 +709,10 @@ left: 300px;
 
 #slide5{
   background:#A27943 url(../images/heros/dormat-8430119966_68cb293270_h.jpg) no-repeat center center; 
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  -o-background-size: auto;
-  background-size: auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
 	color:#FFF;
   position: relative;
   z-index:999;
