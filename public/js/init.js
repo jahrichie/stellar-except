@@ -161,7 +161,8 @@ $(function(){
    $('#quotesel').liquidSlider({
       dynamicTabs: false,
       autoSlide:false,
-      dynamicArrows: true,
+      hoverArrows: false,
+      hideSideArrows: false,
       dynamicArrowsGraphical: true,
       dynamicArrowLeftText: "&#171; left",
       dynamicArrowRightText: "right &#187;"
@@ -174,9 +175,6 @@ $(function(){
     autoSlide:false,
     autoHeight:true,
     preloader: false,
-    // hashLinking: true,
-    // hashNames: true,
-    // hashCrossLinks: true,
     dynamicTabs: true,
     crossLinks: true
   });
