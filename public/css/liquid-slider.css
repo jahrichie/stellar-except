@@ -353,6 +353,18 @@
 h2.title {
   display: none;  
 }
+
+
+
+
+.liquid-nav-left-arrow,.liquid-nav-right-arrow {
+  position: relative;
+  z-index:999999999999999999;   
+  background: #000;
+  color:#FFF;
+}
+
+
 /******************************************************************
 * Larger Mobile Devices
 * This is for devices like the Galaxy Note or something that's 
@@ -420,3 +432,7 @@ h2.title {
 }
 
 
+
+
+
+ 

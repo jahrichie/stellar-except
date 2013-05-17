@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
 
 
     $('[data-behavior~=fademe]').hide();
-    $('[data-behavior~=fademe]').delay(3000).fadeIn(1000);
+    $('[data-behavior~=fademe]').delay(1000).fadeIn(1000);
 
     //initialise Stellar.js
     $(window).stellar();
@@ -158,7 +158,15 @@ jQuery(document).ready(function ($) {
 
 
 $(function(){
-  // $('#learn-slider').liquidSlider();  
+   $('#quotesel').liquidSlider({
+      dynamicTabs: false,
+      autoSlide:false,
+      dynamicArrows: true,
+      dynamicArrowsGraphical: true,
+      dynamicArrowLeftText: "&#171; left",
+      dynamicArrowRightText: "right &#187;"
+
+   });
   //conflicting with something keeping it lower
   // init liquid slider with options
   $('#get-involved-slider').liquidSlider({
