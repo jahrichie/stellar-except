@@ -362,6 +362,7 @@ h2.title {
   z-index:999999999999999999;   
   background: #000;
   color:#FFF;
+  top:-5px;
 }
 
 
