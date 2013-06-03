@@ -124,7 +124,7 @@ jQuery(document).ready(function ($) {
     //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
     function goToByScroll(dataslide) {
-        offset = "50px"
+        offset = 0
         htmlbody.animate({
             scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
         }, 2000, 'easeInOutQuint');
@@ -158,6 +158,7 @@ jQuery(document).ready(function ($) {
 
 
 $(function(){
+    //conflicting with other fnc keeping it lower
    $('#quotesel').liquidSlider({
       dynamicTabs: false,
       autoSlide:false,
@@ -168,8 +169,7 @@ $(function(){
       dynamicArrowRightText: "right &#187;"
 
    });
-  //conflicting with something keeping it lower
-  // init liquid slider with options
+
   $('#get-involved-slider').liquidSlider({
     responsive: false,
     autoSlide:false,

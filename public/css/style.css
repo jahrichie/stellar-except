@@ -432,7 +432,7 @@ input[type="submit"].btn.btn-mini {
 .greensubmit {
 	color:#000;
 	margin-top:10px;
-	margin-left:590px;
+	margin-left:640px;
 	background: #81A56D;	
 	border:1px solid #FFF;
 }
@@ -496,7 +496,7 @@ html,body{
 .logo {
   width: 200px;
   margin-left: 50px;
-  margin-top: 14px;
+  margin-top: 3px;
   float: left;
   margin-right: 51px;
 }
@@ -519,14 +519,14 @@ html,body{
 	background: #81A56D;
 	box-shadow: 0 0 3px rgba(0,0,0,0.9);
 	width:100%;
-	height:70px;
+	height:56px;
   font-size:14px;
 
 }
 
 
 .navigation li{
-font-family: "omnes-pro",sans-serif;
+  font-family: "omnes-pro",sans-serif;
 	font-style: normal;
 	font-weight: 100;
 	text-transform:uppercase;
@@ -554,7 +554,7 @@ font-family: "omnes-pro",sans-serif;
 
 
 .active:after {
-   content: '*';
+/*   content: '*';*/
    font-size:35px;
    color:#973247;
 }
@@ -652,36 +652,8 @@ font-family: "omnes-pro",sans-serif;
   position: relative;
   z-index:999;
 }
-#slide3 img:first-child{
-position:absolute;
-top: 500px;
-left: 300px;
-}
-#slide3 img:nth-child(2){
-	position:absolute;
-	top:100px;
-	left:100px;
-}
-#slide3 img:nth-child(3){
-	position:absolute;
-	top:150px;
-	left:300px;
-}
-#slide3 img:nth-child(4){
-	position:absolute;
-	top:450px;
-	left:300px;
-}
-#slide3 img:nth-child(5){
-	position:absolute;
-	top:200px;
-	right:300px;
-}
-#slide3 img:nth-child(6){
-	position:absolute;
-	top:100px;
-	right:300px;
-}
+
+
 /******************************
  SLIDE 4 
 *******************************/
@@ -693,13 +665,6 @@ left: 300px;
 	-o-background-size: auto;
 	background-size: auto;
 	color:#FFF;
-}
-#slide4 .parallaxbg{
-	position:absolute;
-	right:40px;
-	top:40px;
-	font-size:28px;
-	color:rgba(51,51,51,0.3);
 }
 
 
@@ -1192,11 +1157,12 @@ margin: 199px 0 0 100px;
   margin-left:976px;
 }
 
-.nytimes  {
+.learn-page-links a  {
   text-align:center;
-  width:250px;
+  width:200px;
   display: inline; 
   float:left; 
+  margin:5px;
 }
 
 
