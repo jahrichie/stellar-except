@@ -472,6 +472,10 @@ input[type="submit"].btn.btn-mini {
 
 
 
+
+
+
+
 /* ========================	
 	exceptfarmworkers.com 
 	BY SO DIGITAL 
@@ -879,35 +883,36 @@ input.form {}
 
 .one-sign {margin-left:35px;}
 .one-sign:before {
-   content: "1";
-   font-size:18px;
-   padding-right:10px;
-   color:#888;
-   position: relative;
-   z-index:999;
+  content: "1";
+  font-size: 18px;
+  color: #888;
+  position: absolute;
+  left: 16px;
+  margin-top:4px;
+  z-index: 999;
  
 }
 
 .two-sign:before {
-   content: "2";
-   font-size:18px;
-   padding-right:10px;
-   padding-left:-40px;
-   color:#888;
-   position: relative;
-   z-index:999;
+  content: "2";
+  font-size: 18px;
+  color: #888;
+  position: absolute;
+  left: 15px;
+  margin-top: 4px;
+  z-index: 999;
 
 }
 
 .three-sign {float:left;}
 .three-sign:before {
-   content: "3";
-   font-size:18px;
-   padding-right:10px;
-   padding-left:-40px;
-   color:#888;
-   position: relative;
-   z-index:999;
+  content: "3";
+  font-size: 18px;
+  color: #888;
+  position: absolute;
+  left: 15px;
+  margin-top: 4px;
+  z-index: 999;
 
 }
 h1.suggestedlanguage {
@@ -1174,4 +1179,34 @@ margin: 199px 0 0 100px;
 #quotesel p {
   margin-left:5px;
   max-width:825px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.level-sep {  
+  display: block;
+  background: #CCC;
+  height:10px;
+}
+
+.indi-bullets {
+  margin:10px 0;
+  margin-left: 20px
+}
+
+.indi-bullets a:first-child {
+  margin:0;
+}
+
+.indi-bullets a {
+  float: left;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.petition-cta {
+  float:left;
+  margin-left:40px;
 }
